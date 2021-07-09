@@ -150,7 +150,7 @@ export const Home = () => {
           style={{ marginTop: 30 }}
         />
       )}
-      {searchResult.message && <NotFound />}
+      {searchResult.message && value.length > 0 && <NotFound />}
     </View>
   );
 };
